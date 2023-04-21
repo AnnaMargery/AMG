@@ -38,17 +38,6 @@ public class App
         /* Zadanie 3:
         Stwórz tablicę liczb zmiennoprzecinkowych i następnie oblicz sumę oraz średnią tych liczb. */
 
-        Float[] floats = new Float[] {4.05f , 2.3f , 8.94f , -1.0f};
-
-        Float sum = floats[0] + floats[1] + floats[2] + floats[3];
-        Float average = sum/ floats.length;
-        System.out.println(sum);
-        System.out.println(average);
-        
-        /* Zadanie 3: 2 wersja z wykorzystaniem petli for
-        Stwórz tablicę liczb zmiennoprzecinkowych i następnie oblicz sumę oraz średnią tych liczb. */
-
-
         Float[] floats1 = new Float[] {4.05f , 2.3f , 8.94f , -1.0f};
 
         Float sum1 = 0f;
@@ -91,45 +80,12 @@ public class App
             }
         }
 
-        /* Zadanie 6: // instrukcja warunkowa
+        /* Zadanie 6: 
         Stwórz tablicę liczb całkowitych i następnie znajdź największy i najmniejszy element tej tablicy. */
 
         Integer[] numbers = new Integer[] {1, 4, 6, 10};
-
-        if (numbers[0] > numbers[1] && numbers[0] >numbers[2] && numbers[0] > numbers[3]) {
-            System.out.println("Największy element tablicy to " + numbers[0]);
-        }
-        else if (numbers[1] > numbers[0] && numbers[1] >numbers[2] && numbers[1] > numbers[3]) {
-            System.out.println("Największy element tablicy to " + numbers[1]);
-        }
-
-        else if (numbers[2] > numbers[0] && numbers[2] >numbers[1] && numbers[2] > numbers[3]) {
-            System.out.println("Największy element tablicy to " + numbers[2]);
-        }
-
-        else {
-            System.out.println("Największy element tablicy to " + numbers[3]);
-        }
-
-
-        if (numbers[0] < numbers[1] && numbers[0] < numbers[2] && numbers[0] < numbers[3]) {
-            System.out.println("Najmniejszy element tablicy to " + numbers[0]);
-        }
-        else if (numbers[1] < numbers[0] && numbers[1] < numbers[2] && numbers[1] < numbers[3]) {
-            System.out.println("Najmniejszy element tablicy to " + numbers[1]);
-        }
-
-        else if (numbers[2] < numbers[0] && numbers[2] < numbers[1] && numbers[2] < numbers[3]) {
-            System.out.println("Najmniejszy element tablicy to " + numbers[2]);
-        }
-
-        else {
-            System.out.println("Najmniejszy element tablicy to " + numbers[3]);
-        }
         
-        
-        /*Sposob z wykorzystaniem petli for
-        robimy zalozenie, chcemy zeby chwilowo przypisac pierwsza wartosc z tabeli i zaczac w petli sprawdzac od drugiej */
+        /*robimy zalozenie, chcemy zeby chwilowo przypisac pierwsza wartosc z tabeli i zaczac w petli sprawdzac od drugiej */
 
                 Integer valueMax = numbers[0];
                 Integer valueMin = numbers[0];
@@ -144,6 +100,5 @@ public class App
                 }
                     System.out.println("Najmniejszy element tablicy to " + valueMin);
                     System.out.println("Największy element tablicy to " + valueMax);
-
     }
 }
