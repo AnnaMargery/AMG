@@ -82,10 +82,10 @@ public class App
         /* Zadanie 5:
         Stwórz tablicę imion (bez powtórzeń) i następnie podaj, na którym indexie znajduje się w niej imię "Jan". */
 
-        String[] names = new String[] {"Janek", "Jan", "Jasiek"};
+        String[] names1 = new String[] {"Janek", "Jan", "Jasiek"};
 
-        for (int i = 0; i < names.length; i++) {
-            String name = names[i];
+        for (int i = 0; i < names1.length; i++) {
+            String name = names1[i];
             if (name.equals("Jan")) {
                 System.out.println("Imię " + name + " znajduje się na " + i + " indeksie");
             }
