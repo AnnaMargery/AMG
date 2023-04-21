@@ -1,9 +1,6 @@
 package org.example;
 
-/**
- * Hello world!
- *
- */
+
 public class App 
 {
     public static void main( String[] args )
@@ -47,6 +44,23 @@ public class App
         Float average = sum/ floats.length;
         System.out.println(sum);
         System.out.println(average);
+        
+        /* Zadanie 3: 2 wersja z wykorzystaniem petli for
+        Stwórz tablicę liczb zmiennoprzecinkowych i następnie oblicz sumę oraz średnią tych liczb. */
+
+
+        Float[] floats1 = new Float[] {4.05f , 2.3f , 8.94f , -1.0f};
+
+        Float sum1 = 0f;
+        for (int i = 0; i < floats1.length; i++) {
+            sum1 = floats1[i] + sum1;
+        }
+        System.out.println("Suma liczb wynosi " + sum1);
+
+        Float average1 = sum1/ floats1.length;
+        System.out.println("Średnia wynosi " + average1);
+
+        System.out.println();
 
 
         /* Zadanie 4:
@@ -77,7 +91,7 @@ public class App
             }
         }
 
-        /* Zadanie 6:
+        /* Zadanie 6: // instrukcja warunkowa
         Stwórz tablicę liczb całkowitych i następnie znajdź największy i najmniejszy element tej tablicy. */
 
         Integer[] numbers = new Integer[] {1, 4, 6, 10};
@@ -112,6 +126,24 @@ public class App
         else {
             System.out.println("Najmniejszy element tablicy to " + numbers[3]);
         }
+        
+        
+        /*Sposob z wykorzystaniem petli for
+        robimy zalozenie, chcemy zeby chwilowo przypisac pierwsza wartosc z tabeli i zaczac w petli sprawdzac od drugiej */
+
+                Integer valueMax = numbers[0];
+                Integer valueMin = numbers[0];
+
+                for (int i = 1; i < numbers.length; i++) {
+                    if (valueMax < numbers[i]) {
+                        valueMax = numbers[i];
+                    }
+                     if (valueMin > numbers[i]) {
+                         valueMin = numbers[i];
+                     }
+                }
+                    System.out.println("Najmniejszy element tablicy to " + valueMin);
+                    System.out.println("Największy element tablicy to " + valueMax);
 
     }
 }
