@@ -53,16 +53,16 @@ public class App
         Stwórz tablicę imion (z powtórzeniami) i następnie policz, ile razy występuje w niej imię "Jan". */
 
         String[] names = new String[] {"Jan", "Ania", "Jan"};
-//
-//        int iterator = 0;
-//        for (int i = 0; i < names.length; i++) {
-//            String name = names[i];
-//            if (name.equals("Jan")) {
-//                iterator++;
-//                System.out.println(name);
-//            }
-//        }
-//        System.out.println("Imię Jan występuje " + iterator + " razy");
+
+        int iterator = 0;
+        for (int i = 0; i < names.length; i++) {
+            String name = names[i];
+            if (name.equals("Jan")) {
+                iterator++;
+                System.out.println(name);
+            }
+        }
+        System.out.println("Imię Jan występuje " + iterator + " razy");
 
 
         /* Zadanie 5:
